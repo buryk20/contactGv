@@ -126,7 +126,8 @@ label {
 }
 
 :root {
-  --heightHeader: 156px;
+  --heightHeaderCont: 156px;
+  --heightHeaderContAnchor: -156px;
 }
 
 .contacts-body {
@@ -262,7 +263,7 @@ label {
   padding-bottom: 136px;
   position: -webkit-sticky;
   position: sticky;
-  top: var(--heightHeader);
+  top: var(--heightHeaderCont);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,5 +810,40 @@ label {
 
 .last-in-section {
   margin-bottom: 0;
+}
+
+#contacts-section-1 {
+  display: block;
+  content: "";
+  height: var(--heightHeaderCont);
+  margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-2 {
+  display: block;
+  content: "";
+  height: var(--heightHeaderCont);
+  margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-3 {
+  display: block;
+  content: "";
+  height: var(--heightHeaderCont);
+  margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-4 {
+  display: block;
+  content: "";
+  height: var(--heightHeaderCont);
+  margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-5 {
+  display: block;
+  content: "";
+  height: var(--heightHeaderCont);
+  margin-top: var(--heightHeaderContAnchor);
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,8 @@ $text_black: #1F1F1F;
 $black: #000000;
 
 :root {
-    --heightHeader: 156px;
+    --heightHeaderCont: 156px;
+    --heightHeaderContAnchor: -156px;
 }
 
 @mixin __860 {
@@ -144,7 +145,7 @@ $black: #000000;
         padding-bottom: 136px;
 
         position: sticky;
-        top: var(--heightHeader);
+        top: var(--heightHeaderCont);
 
         display: flex;
         flex-direction: column;
@@ -628,4 +629,40 @@ $black: #000000;
 
 .last-in-section {
     margin-bottom: 0;
+}
+
+#contacts-section-1{
+    display: block;
+	content: "";
+	height: var(--heightHeaderCont);
+	margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-2{
+    display: block;
+	content: "";
+	height: var(--heightHeaderCont);
+	margin-top: var(--heightHeaderContAnchor);
+}
+
+
+#contacts-section-3{
+    display: block;
+	content: "";
+	height: var(--heightHeaderCont);
+	margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-4{
+    display: block;
+	content: "";
+	height: var(--heightHeaderCont);
+	margin-top: var(--heightHeaderContAnchor);
+}
+
+#contacts-section-5{
+    display: block;
+	content: "";
+	height: var(--heightHeaderCont);
+	margin-top: var(--heightHeaderContAnchor);
 }
