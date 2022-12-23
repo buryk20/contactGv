@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="contacts-body">
+    <header>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+
+    </header>
+    <main class="contacts-main">
+        <div class="contacts-main-picture">
+            <div class="contacts-main-picture__img-wrp">
+                <img src="images/ContactsMainPicture.jpg" alt="Contacts main picture">
+                <div class="contacts-main-picture__img-gradient"></div>
+            </div>
+            <div class="contacts-main-picture__header-wrp">
+                <h1 class="contacts-main-picture__header">{{__('contact.title')}}</h1>
+            </div>
+        </div>
+        <div class="contacts-content-wrapper">
+            <div class="contacts-guide">
+                <span class="contacts-guide__line"></span>
+                <div data-nav-wrp class="contacts-guide__elements">
+                    <a href="#contacts-section-1" class="contacts-guide__element">
+                        <div class="contacts-guide__element-number-wrp">
+                            <p class="contacts-guide__element-number">1</p>
+                        </div>
+                        <h2 class="contacts-guide__element-name">{{__('contact.title')}}</h2>
+                    </a>
+                    <a href="#contacts-section-2" class="contacts-guide__element">
+                        <div class="contacts-guide__element-number-wrp">
+                            <p class="contacts-guide__element-number">2</p>
+                        </div>
+                        <h2 class="contacts-guide__element-name">{{__('contact.navSalesDepartment')}}</h2>
+                    </a>
+                    <a href="#contacts-section-3" class="contacts-guide__element">
+                        <div class="contacts-guide__element-number-wrp">
+                            <p class="contacts-guide__element-number">3</p>
+                        </div>
+                        <h2 class="contacts-guide__element-name">{{__('contact.navShops')}}</h2>
+                    </a>
+                    <a href="#contacts-section-4" class="contacts-guide__element">
+                        <div class="contacts-guide__element-number-wrp">
+                            <p class="contacts-guide__element-number">4</p>
+                        </div>
+                        <h2 class="contacts-guide__element-name">{{__('contact.navSupport')}}</h2>
+                    </a>
+                    <a href="#contacts-section-5" class="contacts-guide__element">
+                        <div class="contacts-guide__element-number-wrp">
+                            <p class="contacts-guide__element-number">5</p>
+                        </div>
+                        <h2 class="contacts-guide__element-name">{{__('contact.navAccounting')}}</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-sections">
+                <div id="contacts-section-1" class="contacts-sections__section">
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-header">{{__('contact.sharedRoom')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.sharedRoomSchedule')}}</p>
+                    <button class="contacts-sections__section-btn contacts-sections__call-btn" onclick="location.href='tel:0800309988'" type="button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M18.1183 14.702L14.0001 15.5C11.2184 14.1038 9.50009 12.5 8.50009 10L9.27004 5.8699L7.81461 2L4.06369 2C2.93614 2 2.04823 2.93178 2.21663 4.04668C2.63704 6.83 3.87662 11.8765 7.50009 15.5C11.3053 19.3052 16.7858 20.9564 19.8021 21.6127C20.9669 21.8662 22.0001 20.9575 22.0001 19.7655L22.0001 16.1812L18.1183 14.702Z" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="contacts-sections__section-btn-text">0800309988</p>
+                    </button>
+                    <p class="contacts-sections__section-text-small contacts-sections__section-text-centered-on-mobile">{{__('contact.freeCalls')}}</p>
+                    <p class="contacts-sections__section-text contacts-sections__section-text-centered-on-mobile">{{__('contact.weAreGlad')}}</p>
+                    <div class="contacts-sections__section-socials">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M15.9998 21.3327C18.9454 21.3327 21.3332 18.9449 21.3332 15.9993C21.3332 13.0538 18.9454 10.666 15.9998 10.666C13.0543 10.666 10.6665 13.0538 10.6665 15.9993C10.6665 18.9449 13.0543 21.3327 15.9998 21.3327Z" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 21.3333V10.6667C4 6.98477 6.98477 4 10.6667 4H21.3333C25.0152 4 28 6.98477 28 10.6667V21.3333C28 25.0152 25.0152 28 21.3333 28H10.6667C6.98477 28 4 25.0152 4 21.3333Z" stroke="#1F1F1F" stroke-width="2"/>
+                                <path d="M23.3335 8.67935L23.3468 8.66453" stroke="#1F1F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M28 9V23C28 25.7614 25.7614 28 23 28H9C6.23858 28 4 25.7614 4 23V9C4 6.23858 6.23857 4 9 4H23C25.7614 4 28 6.23857 28 9Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.6665 28C14.6665 24 14.6665 20 14.6665 16C14.6665 13.0833 15.3332 10.6667 19.9998 10.6667" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 17.334H14.6667H20" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M18.6667 15.9993L14 18.666V13.3327L18.6667 15.9993Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.6665 18.9742V13.0257C2.6665 10.1355 2.6665 8.69048 3.56561 7.76026C4.46472 6.83004 5.89404 6.78141 8.75268 6.68415C11.1401 6.60292 13.8232 6.5332 15.9998 6.5332C18.1764 6.5332 20.8596 6.60292 23.247 6.68415C26.1056 6.78141 27.535 6.83004 28.4341 7.76026C29.3332 8.69048 29.3332 10.1355 29.3332 13.0257V18.9742C29.3332 21.8643 29.3332 23.3093 28.4341 24.2395C27.535 25.1697 26.1057 25.2184 23.2471 25.3157C20.8597 25.3969 18.1765 25.4667 15.9998 25.4667C13.8232 25.4667 11.14 25.3969 8.75258 25.3157C5.89399 25.2184 4.4647 25.1697 3.5656 24.2395C2.6665 23.3093 2.6665 21.8643 2.6665 18.9742Z" stroke="#1F1F1F" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div id="contacts-section-2" class="contacts-sections__section">
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-header">{{__('contact.callCentre')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <!-- <p class="contacts-sections__section-text contacts-sections__section-text-centered-on-mobile contacts-sections__section-text-smaller-on-mobile">Дзвінки з мобільних та стаціонарних телефонів у межах України безкоштовні.</p> -->
+                        <div class="contacts-sections__cards">
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/cheltsovaIrina.jpg" alt="{{__('contact.cheltsovaIrina')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.cheltsovaIrina')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.headOfRetailDepartmen')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0636313045">+38 (063) 631-30-45</a>
+                                        <a href="viber://chat?number=%2B380636313045">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380636313045">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:a.georgieva@logicfox.pro">a.georgieva@logicfox.pro</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/annaGeorgieva.jpg" alt="{{__('contact.annaGeorgieva')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.annaGeorgieva')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.managerRetailDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0674625740">+38 (067) 462-57-40</a>
+                                        <a href="viber://chat?number=%2B380674625740">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380674625740">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:a.georgieva@logicfox.pro">a.georgieva@logicfox.pro</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/burakovaAlexandra.jpg" alt="{{__('contact.burakovaAlexandra')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.burakovaAlexandra')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.managerRetailDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0930830450">+38 (093) 083-04-50</a>
+                                        <a href="viber://chat?number=%2B380930830450">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380930830450">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_1@logichub.com.ua">seller_1@logichub.com.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/lototskyVyacheslav.jpg" alt="{{__('contact.lototskyVyacheslav')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.lototskyVyacheslav')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.managerRetailDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0676540114">+38 (067) 654-01-14</a>
+                                        <a href="viber://chat?number=%2B380676540114">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380676540114">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_12@logicfox.pro">seller_12@logicfox.pro</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/belokurVladislav.jpg" alt="{{__('contact.belokurVladislav')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.belokurVladislav')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.managerRetailDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0677531791">+38 (067) 753-17-91</a>
+                                        <a href="viber://chat?number=%2B380677531791">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380677531791">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_11@logicfox.pro">seller_11@logicfox.pro</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/tokarevAlexander.jpg" alt="{{__('contact.tokarevAlexander')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.tokarevAlexander')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.managerRetailDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0930830449">+38 (093) 083-04-49</a>
+                                        <a href="viber://chat?number=%2B380930830449">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380930830449">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_9@logicfox.pro">seller_9@logicfox.pro</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="contacts-sections__section-header">{{__('contact.wholesaleSalesDepatrment')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <!-- <p class="contacts-sections__section-text contacts-sections__section-text-centered-on-mobile contacts-sections__section-text-smaller-on-mobile">Звонки с мобильных и стационарных телефонов в пределах Украины бесплатные.</p> -->
+                        <div class="contacts-sections__cards last-in-section">
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/olegKremeniuk.jpg" alt="{{__('contact.olegKremeniuk')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.olegKremeniuk')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0931223107">+38 (093) 122-31-07</a>
+                                        <a href="viber://chat?number=%2B380931223107">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380931223107">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:o.kremeniuk@logicfox.ua">o.kremeniuk@logicfox.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/igorKremenyuk.jpg" alt="{{__('contact.igorKremenyuk')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.igorKremenyuk')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0931223438">+38 (093) 122-34-38</a>
+                                        <a href="viber://chat?number=%2B380931223438">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380931223438">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:i.kremeniuk@logicfox.ua">i.kremeniuk@logicfox.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/popovaAnastasia.jpg" alt="{{__('contact.popovaAnastasia')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.popovaAnastasia')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0930830149">+38 (093) 083-01-49</a>
+                                        <a href="viber://chat?number=%2B380930830149">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380930830149">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_8@logicfox.pro">seller_8@logicfox.pro</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/lozitskayaValeria.jpg" alt="{{__('contact.lozitskayaValeria')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.lozitskayaValeria')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0931234803">+38 (093) 123-48-03</a>
+                                        <a href="viber://chat?number=%2B380931234803">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380931234803">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:v.lozitskaya@logicfox.ua">v.lozitskaya@logicfox.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/tsybriyMaxim.jpg" alt="{{__('contact.tsybriyMaxim')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.tsybriyMaxim')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0930830148">+38 (093) 083-01-48</a>
+                                        <a href="viber://chat?number=%2B380930830148">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380930830148">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_2@greenvision.com.ua">seller_2@greenvision.com.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/buchnskayaSvetlana.jpg" alt="{{__('contact.buchnskayaSvetlana')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.buchnskayaSvetlana')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0931234156">+38 (093) 123-41-56</a>
+                                        <a href="viber://chat?number=%2B380931234156">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380931234156">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_1@greenvision.com.ua">seller_1@greenvision.com.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/karinaKhakimova.jpg" alt="{{__('contact.karinaKhakimova')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.karinaKhakimova')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.wholesaleSalesManager')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0931223135">+38 (093) 122-31-35</a>
+                                        <a href="viber://chat?number=%2B380931223135">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380931223135">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:seller_6@greenvision.com.ua">seller_6@greenvision.com.ua</a>
+                                </div>
+                            </div>
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/alexanderKovalchuk.jpg" alt="{{__('contact.alexanderKovalchuk')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.alexanderKovalchuk')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.tenderDepartment')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0676542176">+38 (067) 654-21-76</a>
+                                        <a href="viber://chat?number=%2B380676542176">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380676542176">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:a.kovalchuk@logicfox.ua">a.kovalchuk@logicfox.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contacts-section-3" class="contacts-sections__section">
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-header">{{__('contact.navShops')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.city')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.address7km')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.schedule7km')}}</p>
+                    </div>
+                    <div class="contacts-sections__btn-map-wrp">
+                        <div data-btn-wrp-map class="contacts-sections__btn-arrow-map-wrp">
+                            <p>{{__('contact.showMap')}}</p>
+                            <img data-arrow-map src="icons/nav-arrow-down-ks.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <div data-map-wrp class="contacts-sections__map-wrp">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10996.652086968357!2d30.6352593!3d46.4454668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65fa4f41baab6944!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986552060!5m2!1sru!2sua" width="1133" height="503" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.city')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.addressStar')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.scheduleStar')}}</p>
+                    </div>
+                    <div class="contacts-sections__btn-map-wrp">
+                        <div data-btn-wrp-map class="contacts-sections__btn-arrow-map-wrp">
+                            <p>{{__('contact.showMap')}}</p>
+                            <img data-arrow-map src="icons/nav-arrow-down-ks.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <div data-map-wrp class="contacts-sections__map-wrp">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2747.4966733400734!2d30.7112497!3d46.4784769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x510ed329a1dace3d!2sLogicPower!5e0!3m2!1sru!2sua!4v1592986700273!5m2!1sru!2sua" width="1133" height="503" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.city')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.addressSky')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.scheduleSky')}}</p>
+                    </div>
+                    <div class="contacts-sections__btn-map-wrp">
+                        <div data-btn-wrp-map class="contacts-sections__btn-arrow-map-wrp">
+                            <p>{{__('contact.showMap')}}</p>
+                            <img data-arrow-map src="icons/nav-arrow-down-ks.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div data-map-wrp class="contacts-sections__map-wrp last-in-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.88882708408215!2d30.710111198252406!3d46.40686231749278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633b0678e4b13%3A0x8c6f39b843a3b43a!2sLogicPower!5e0!3m2!1sru!2sua!4v1632305240162!5m2!1sru!2sua" width="1133" height="503" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div id="contacts-section-4" class="contacts-sections__section">
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-header">{{__('contact.navSupport')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.supportText')}}</p>
+                        <p class="contacts-sections__section-text">{{__('contact.supportTextGuarantee')}}</p>
+                        <div class="contacts-sections__cards-small">
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/logutenkoDmitry.jpg" alt="{{__('contact.logutenkoDmitry')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.logutenkoDmitry')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.technicalSpecialist')}}</p>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0674744898">+38 (067) 474-48-98</a>
+                                        <a href="viber://chat?number=%2B380674744898">
+                                            <img src="icons/Viber-koss.svg" alt="Viber">
+                                        </a>
+                                        <a href="https://t.me/+380674744898">
+                                            <img src="icons/Telegram-koss.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:support@greenvision.com.ua">support@greenvision.com.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="contacts-sections__section-btn" onclick="location.href='tel:0800309988'" type="button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M18.1183 14.702L14.0001 15.5C11.2184 14.1038 9.50009 12.5 8.50009 10L9.27004 5.8699L7.81461 2L4.06369 2C2.93614 2 2.04823 2.93178 2.21663 4.04668C2.63704 6.83 3.87662 11.8765 7.50009 15.5C11.3053 19.3052 16.7858 20.9564 19.8021 21.6127C20.9669 21.8662 22.0001 20.9575 22.0001 19.7655L22.0001 16.1812L18.1183 14.702Z" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="contacts-sections__section-btn-text">Позвонить</p>
+                        </button>
+                        <p class="contacts-sections__section-subheader">Сервисные центры:</p>
+                    </div>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">Уважаемые партнёры и клиенты компании, убедительная просьба при направлении оборудования на гарантийное/постгарантийное обслуживание, очень просим Вас прикреплять к отправке заполненный сопроводительный лист, это поможет нам быстрее устранить неполадку, а так же уменьшить время Вашего ожидания, благодарим Вас за сотрудничество!</p>
+                        <button class="contacts-sections__section-btn last-in-section" onclick="location.href='tel:0800309988'" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 20L18 20" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="contacts-sections__section-btn-text">Скачать файл</p>
+                        </button>
+                    </div>
+                </div>
+                <div id="contacts-section-5" class="contacts-sections__section">
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-header">{{__('contact.navAccounting')}}</p>
+                    </div>
+                    <span class="contacts-sections__section-line"></span>
+                    <div class="contacts-sections__section-content-wrp">
+                        <p class="contacts-sections__section-text">{{__('contact.accountingText')}}</p>
+                        <div class="contacts-sections__cards-small last-in-section">
+                            <div class="contacts-sections__card">
+                                <div class="contacts-sections__card-main-wrp">
+                                    <div class="contacts-sections__card-photo-wrp">
+                                        <img src="images/makarovaNina.jpg" alt="{{__('contact.makarovaNina')}}">
+                                    </div>
+                                    <div class="contacts-sections__card-info-wrp">
+                                        <p class="contacts-sections__card-name">{{__('contact.makarovaNina')}}</p>
+                                    <p class="contacts-sections__card-job">{{__('contact.accountant')}}</p>
+                                    </div>
+                                </div>
+                                 <div class="contacts-sections__card-number">
+                                    <img src="icons/Phone-koss.svg" alt="Phone">
+                                    <div class="contacts-sections__card-number-types">
+                                        <a class="contacts-link" href="tel:0675499355">+38 (067) 549-93-55</a>
+                                    </div>
+                                </div>
+                                <div class="contacts-sections__card-mail">
+                                    <img src="icons/Mail-koss.svg" alt="Mail">
+                                    <a class="contacts-link" href="mailto:booker_1@logicfox.ua">booker_1@logicfox.ua</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const btnWrpMap = document.querySelectorAll('[data-btn-wrp-map]');
+        const mapWrp = document.querySelectorAll('[data-map-wrp]');
+        btnWrpMap.forEach((el, index) => {
+            el.addEventListener('click', function() {
+                mapWrp[index].classList.toggle('active');
+                el.classList.toggle('active');
+            })
+        });
+        const headerBr = document.querySelector('header');
+        let heightHeader = headerBr.clientHeight;
+        let navWrp = document.querySelector('[data-nav-wrp]');
+        window.addEventListener('resize', changeNavigationHeight);
+        function changeNavigationHeight() {
+            window.getComputedStyle(navWrp).getPropertyValue('--heightHeader');
+            navWrp.style.setProperty('--heightHeader', heightHeader + 'px');
+        }
+        changeNavigationHeight();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+$main_font: 'Inter', sans-serif;
+$second_font: 'Roboto', sans-serif;
+$green: #009B3E;
+$white: #FFFFFF;
+$text_black: #1F1F1F;
+$black: #000000;
+
+:root {
+    --heightHeader: 156px;
+}
+
+@mixin __860 {
+    @media (max-width: 860px) {
+      @content;
+    }
+}
+
+.contacts-body {
+    background-color: #F3F3F3;
+}
+
+.contacts-main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-link {
+    transition: 0.3s;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.contacts-main-picture {
+    height: 560px;
+    width: 100%;
+
+    position: relative;
+
+    @include __860 {
+        height: 254px;
+    }
+
+    &__img-wrp {
+        width: 100%;
+        height: 100%;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            @include __860 {
+                object-position: left;
+            }
+        }
+    }
+
+    &__img-gradient {
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(180deg, rgba(138, 138, 138, 0) 0%, rgba(54, 54, 54, 0.37) 56.63%, rgba(54, 54, 54, 0.83) 81.98%);
+
+        position: absolute;
+        top: 0;
+    }
+
+    &__header-wrp {
+        max-width: 1472px;
+        width: 100%;
+
+        position: absolute;
+        bottom: 64px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        padding-left: 16px;
+        padding-right: 16px;
+
+        @include __860 {
+            bottom: 32px;
+        }
+    }
+
+    &__header {
+        font-family: $main_font;
+        font-size: 36px;
+        font-weight: 700;
+        color: $white;
+
+        @include __860 {
+            font-size: 24px;
+        }
+    }
+}
+
+.contacts-content-wrapper {
+    max-width: 1472px;
+        width: 100%;
+
+        padding-left: 16px;
+        padding-right: 16px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+}
+
+.contacts-guide {
+    max-width: 227px;
+    width: 100%;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    @include __860 {
+        display: none;
+    }
+
+    &__line {
+        background-color: $white;
+        width: 8px;
+        height: 100%;
+
+        display: block;
+
+        position: absolute;
+        left: 20px;
+    }
+
+    &__elements {
+        padding-top: 64px;
+        padding-bottom: 136px;
+
+        position: sticky;
+        top: var(--heightHeader);
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__element {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        &:hover .contacts-guide__element-name{
+            color: $text_black;
+
+            transition: 0.3s;
+        }
+    }
+
+    &__element-number-wrp {
+        width: 48px;
+        height: 48px;
+
+        background-color: $white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+    }
+
+    &__element-number {
+        font-family: $main_font;
+        font-size: 18px;
+        font-weight: 600;
+        color: $green;
+    }
+
+    &__element-name {
+        font-family: $main_font;
+        font-size: 20px;
+        font-weight: 400;
+        color: #8A8A8A;
+
+        transition: 0.3s;
+    }
+}
+
+.contacts-sections {
+    max-width: 1197px;
+    width: 100%;
+
+    padding-top: 64px;
+    padding-bottom: 136px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include __860 {
+        padding-top: 32px;
+
+        gap: 16px;
+    }
+
+    &__btn-arrow-map-wrp {
+        width: 100%;
+        height: 40px;
+
+        margin-bottom: 24px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: $main_font;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1F1F1F;
+
+        background-color: #E9E9E9;
+
+        cursor: pointer;
+
+
+        &.active > img {
+            transform: rotate(-180deg);
+            transition: 0.3s ease-in;
+        }
+
+        & > img {
+            transition: 0.3s ease-out;
+        }
+    }
+
+    &__btn-map-wrp {
+        @include __860 {
+            padding: 0 16px;
+        }
+    }
+
+    &__section {
+        background-color: $white;
+
+        padding: 32px;
+
+        border-radius: 8px;
+
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+
+        @include __860 {
+            padding: 16px 0;
+
+            gap: 16px;
+        }
+    }
+
+    &__section-content-wrp {
+        @include __860 {
+            padding: 0 16px;
+        }
+    }
+
+    &__section-header {
+        font-family: $main_font;
+        font-size: 20px;
+        font-weight: 600;
+        color: $text_black;
+
+        margin-bottom: 16px;
+
+        text-transform: uppercase;
+
+        @include __860 {
+            font-size: 16px;
+            font-weight: 700;
+
+            text-transform: none;
+        }
+    }
+
+    &__section-line {
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: $green;
+
+        margin-bottom: 16px;
+    }
+
+    &__section-text {
+        font-family: $main_font;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text_black;
+
+        margin-bottom: 16px;
+    }
+
+    &__section-text-small {
+        font-family: $main_font;
+        font-size: 12px;
+        font-weight: 400;
+        color: $text_black;
+
+        margin-bottom: 16px;
+    }
+
+    &__section-text-centered-on-mobile {
+        @include __860 {
+            text-align: center;
+        }
+    }
+
+    &__section-text-smaller-on-mobile {
+        @include __860 {
+            font-size: 12px;
+        }
+    }
+
+    &__section-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        padding: 8px 32px;
+
+        border: 1px solid $green;
+        border-radius: 6px;
+
+        color: $green;
+
+        transition: 0.3s;
+
+        margin-bottom: 16px;
+
+        path {
+            stroke: $green;
+
+            transition: 0.3s;
+        }
+
+        &:hover {
+            background-color: #00BC4B;
+            border: 1px solid #00BC4B;
+            color: $white;
+
+            transition: 0.3s;
+
+            path {
+                stroke: white;
+
+                transition: 0.3s;
+            }
+        }
+
+        &:active {
+            background-color: #007730;
+            border: 1px solid #007730;
+            color: $white;
+
+            transition: 0.3s;
+
+            path {
+                stroke: white;
+
+                transition: 0.3s;
+            }
+        }
+
+        &.inactive {
+            background-color: #8A8A8A;
+            border: 1px solid #8A8A8A;
+            color: $white;
+
+            transition: 0.3s;
+
+            path {
+                stroke: white;
+
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__call-btn {
+        @include __860 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__section-btn-text {
+        font-family: $main_font;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    &__section-socials {
+        display: flex;
+        gap: 16px;
+
+        @include __860 {
+            justify-content: center;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+
+        padding-top: 16px;
+
+        margin-bottom: 32px;
+
+        @include __860 {
+            flex-direction: column;
+            align-items: center;
+
+            gap: 16px;
+        }
+    }
+
+    &__cards-small {
+        display: flex;
+        justify-content: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+
+        padding-top: 16px;
+
+        margin-bottom: 32px;
+
+        @include __860 {
+            flex-direction: column;
+            align-items: center;
+
+            gap: 16px;
+        }
+    }
+
+    &__card {
+        max-width: 350px;
+        width: 100%;
+
+        @include __860 {
+            border-bottom: 1px solid #F3F3F3;
+
+            padding-bottom: 10px;
+        }
+
+    }
+
+    &__card-main-wrp {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+
+        margin-bottom: 20px;
+
+        @include __860 {
+            gap: 18px;
+        }
+    }
+
+    &__card-photo-wrp {
+        width: 90px;
+        height: 90px;
+
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        overflow: hidden;
+
+        @include __860 {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__card-info-wrp {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__card-name {
+        font-family: $second_font;
+        font-size: 22px;
+        font-weight: 700;
+        color: $green;
+
+        @include __860 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__card-job {
+        font-family: $second_font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $text_black;
+        font-style: italic;
+
+        @include __860 {
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+
+    &__card-number {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        padding-left: 32px;
+
+        margin-bottom: 15px;
+
+        @include __860 {
+            gap: 24px;
+
+            padding-left: 20px;
+        }
+    }
+
+    &__card-number-types {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        font-family: $second_font;
+        font-size: 14px;
+        font-weight: 400;
+        color: $text_black;
+    }
+
+    &__card-mail {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        padding-left: 32px;
+
+        font-family: $second_font;
+        font-size: 14px;
+        font-weight: 400;
+        color: $text_black;
+
+        @include __860 {
+            gap: 24px;
+
+            padding-left: 20px;
+        }
+    }
+
+    &__map-wrp {
+        max-width: 1133px;
+        width: 100%;
+        height: 0;
+
+        margin-bottom: 16px;
+
+        display: flex;
+
+        overflow: hidden;
+        transition: 0.3s ease-out;
+
+        @include __860 {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        & iframe {
+            width: 100%;
+
+            @include __860 {
+                height: 152px;
+            }
+        }
+
+        &.active {
+            height: 503px;
+
+            transition: 0.3s ease-in;
+
+            @include __860 {
+                height: 152px;
+            }
+        }
+    }
+
+    &__section-subheader {
+        font-family: $main_font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $text_black;
+
+        margin-bottom: 16px;
+
+        @include __860 {
+            font-size: 16px;
+            font-weight: 500;
+
+            text-transform: uppercase;
+        }
+    }
+}
+
+.last-in-section {
+    margin-bottom: 0;
+}
